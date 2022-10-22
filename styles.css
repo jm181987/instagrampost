@@ -1,60 +1,76 @@
+* {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	background: #171717;
-	font-size: 20px;
-	font-family: "Handlee", cursive;
+    background-color: rgb(0, 0, 0);
 }
-.postcard {
-	background: white;
-	width: 500px;
-	height: 350px;
-	margin: auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 15px;
+
+.flex-container {
+    display: flex;
 }
-.postcard-header {
-	overflow: hidden;
+
+.wrapper {
+    margin: 50px auto;
+    background-color: #fff;
+    width: 500px;
+    height: auto;
 }
-.postcard-header img {
-	max-width: 60px;
-	float: right;
+
+.header {
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
 }
-.postcard-body {
-	overflow: hidden;
+
+.fa-instagram {
+    margin-right: 10px;
 }
-input {
-	font-size: 18px;
-	font-family: "Handlee", cursive;
+
+.fa-ellipsis-v {
+    margin-left: auto;
 }
-.postcard h1 {
-	margin: 0;
+
+h1, h2, p, strong {
+    font-size: 1.7rem;
 }
-.left-part {
-	float: left;
-	width: 50%;
+
+img {
+    width: 100%;
+    height: auto;
 }
-.right-part {
-	float: right;
-	width: 50%;
+
+.icons {
+    align-items: center;
 }
-.right-part input {
-	display: block;
+
+.content {
+    flex-direction: column;
+    padding: 15px;
 }
-.postcard-footer {
-	padding: 10px;
-	text-align: center;
+
+.icons {
+    padding-bottom: 15px;
 }
-.postcard-footer input[type="submit"] {
-	background-color: lightgrey;
+
+.icon:hover .icon-on,
+.icon .icon-off {
+    display: none;
 }
-.postcard-body input[type="text"] {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	width: 240px;
+.icon:hover .icon-off {
+    display: inline;
 }
-h1 {
-	font-size: 35px;
+
+.fa-comment, .fa-paper-plane {
+    margin-left: 10px;
+}
+
+.bookmark {
+    margin-left: auto;
+}
+
+.likes {
+    padding-bottom: 15px;
 }
