@@ -1,76 +1,108 @@
-* {
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: black;
 }
 
-.flex-container {
+.container {
+    height: 620px;
+    width: 460px;
+    margin: 55px auto;
     display: flex;
-}
-
-.wrapper {
-    margin: 50px auto;
-    background-color: #fff;
-    width: 500px;
-    height: auto;
+    flex-direction: column;
+    background-color: white;
 }
 
 .header {
-    flex-direction: row;
-    align-items: center;
-    padding: 15px;
-}
-
-.fa-instagram {
-    margin-right: 10px;
-}
-
-.fa-ellipsis-v {
-    margin-left: auto;
-}
-
-h1, h2, p, strong {
-    font-size: 1.7rem;
-}
-
-img {
     width: 100%;
-    height: auto;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    padding-top: 8px;
 }
 
-.icons {
-    align-items: center;
+.user {
+    width: 95%;
+    display: flex;
+    margin-left: 15px;
 }
 
-.content {
-    flex-direction: column;
-    padding: 15px;
+.icon-html5 {
+    font-size: 31px;
+    align-self: center;
+    margin-bottom: 3px;
 }
-
-.icons {
-    padding-bottom: 15px;
-}
-
-.icon:hover .icon-on,
-.icon .icon-off {
-    display: none;
-}
-.icon:hover .icon-off {
-    display: inline;
-}
-
-.fa-comment, .fa-paper-plane {
+.names {
+    float: left;
+    align-self: center;
     margin-left: 10px;
+    margin-bottom: 5px;
+}
+.names > h1 {
+    font-size: 15px;
+    margin: 0px;
+
 }
 
-.bookmark {
-    margin-left: auto;
+.names > h2 {
+    font-size: 14px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.options {
+    width: auto;
+    align-self: center;
+    font-size: 26px;
+    margin-bottom: 3px;
+    margin-right: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 330px;
+    padding-top: 5px;
+}
+
+.image > img {
+    width: 100%;
+    height: 330px;
+}
+
+.footer {
+    width: 431px;
+    height: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    width: 430px;
+    display: flex;
+    font-size: 32px;
+}
+
+.share {
+    width: 93%;
+}
+.save {
+    float: rigth;
+    width: auto;
 }
 
 .likes {
-    padding-bottom: 15px;
+    width: 430px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+.description {
+    width: 430px;
+    font-size: 15px;
+}
+
+.description > p {
+    margin: 0px;
 }
